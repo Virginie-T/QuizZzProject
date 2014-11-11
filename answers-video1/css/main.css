@@ -1,0 +1,96 @@
+html {
+background-image: url("../image/presence.gif");
+background-repeat: repeat;
+}
+
+body {
+	background-color: rgba(255, 192, 17, 0.5);  
+    margin: 0;
+	}
+
+
+.logo {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -20px;
+}
+
+.frozen-pic {
+  max-width: 480px;
+  background-color: white;
+  display: block;
+  margin: 10px;
+}
+
+button {
+      font-family: "FantasticParty";
+      font-size: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 18px;
+      border: 5px dotted #F7FF9C;
+      border-radius: 10px;
+      background-color: #D52B2B;
+      color: #F7FF9C;
+      padding: 0 70px 0 70px;
+      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+      outline : none
+      /* not working box-shadow: 1px 1px 11px 5px #242424; */
+
+}
+
+#dots { 
+  border-image: url(image/dotted.png)30 repeat stretch;
+    border-image-width: 5px;
+    border-image-repeat: repeat;
+    position:absolute;
+      z-index: 1;
+
+
+
+}
+
+#first-answer {
+  margin-top: 35px;
+}
+
+/* b ronde  bordure.png 
+
+.bordure {
+  z-index: 1;
+  position: absolute;
+  width: 485px;
+  height: 250px;
+  top: 193px;
+   left: 10px;
+ }
+
+ */
+
+/* b square    border-clipart-Old_style_border_Vector_Clipart copy.png */
+ .bordure {
+  z-index: 1;
+  position: absolute;
+  width: 480px;
+  height: 239px;
+  top: 198px;
+   left: 10px;
+ }
+
+
+@font-face { 
+    font-family: "FantasticParty";
+    src: url('../font/FantasticParty.ttf');
+}
+
+
+button:active {
+  background-color: #34cda6;
+}
+
+
+
+
