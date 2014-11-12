@@ -14,7 +14,6 @@ html {
 
 background-image: url("../image/presence.gif");
 background-repeat: repeat;
-padding-bottom: 0;
 
 }
 
@@ -38,8 +37,7 @@ body {
     margin-right: auto;
     display: block;
     max-width: 400px;
-    margin-top: 70px;
-    margin-top: -60px;
+    margin-top: -5px;
 }
 
 
@@ -64,7 +62,6 @@ body {
 
  h1 {
         font-family: "DottyShadow";
-        color: #9E1E1E;  /*darkred  #B52525;  /*pink vif #4B3A4B;*/
         font-size: 38px; 
         text-align: center;
         border-bottom-style: solid; 
@@ -78,9 +75,77 @@ body {
         padding-right: 5px;
 
         text-shadow: -1px 0px 24px rgba(255, 255, 255, 1);
-        
+        color: #9E1E1E;  /*darkred  #B52525;  /*pink vif #4B3A4B;*/
+
         background-color: #D889B3;  /*#D85299;*/
         box-shadow: inset 0 0 17px 6px rgba(216,82,153,.5);
         background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
 
  }
+
+ a {
+    text-decoration: none;
+    color: #9E1E1E;  /*darkred  #B52525;  /*pink vif #4B3A4B;*/
+
+ }
+
+
+
+
+/*********************************************
+ * ROLLING LINKS
+ ***************************************color for selected (active) : #34D1A7;******/
+
+
+.roll {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+
+            perspective: 300px;
+
+            perspective-origin: 50% 50%;
+}
+.roll:hover {
+    background: none;
+    text-shadow: none;
+}
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+    pointer-events: none;
+
+    transition: all 400ms ease;
+            
+    transform-origin: 50% 0%;
+    
+    transform-style: preserve-3d;
+}
+.roll:hover span {
+    background: rgba(255,255,255,1);
+
+    transform: translate3d( 0px, 0px, -55px ) rotateX( 90deg );
+}
+.roll span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1px 2px;
+    white-space: nowrap;
+
+    color: white; /*#F7FF9C;*/
+    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+
+
+    transform-origin: 50% 0%;
+
+    transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
+
+
+
+

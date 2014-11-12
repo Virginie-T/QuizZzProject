@@ -86,3 +86,8 @@ video {
     src: url('../font/Typo_Comica_demo.otf');
 }
 
+a {
+  text-decoration: none; 
+  color: #F7FF9C;
+
+}
