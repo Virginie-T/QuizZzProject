@@ -57,7 +57,7 @@ button {
   margin-top: 35px;
 }
 
-/* b ronde  bordure.png 
+/* b ronde  bordure.png */
 
 .bordure {
   z-index: 1;
@@ -68,9 +68,9 @@ button {
    left: 10px;
  }
 
- */
+ 
 
-/* b square    border-clipart-Old_style_border_Vector_Clipart copy.png */
+/* b square    border-clipart-Old_style_border_Vector_Clipart copy.png 
  .bordure {
   z-index: 1;
   position: absolute;
@@ -79,6 +79,7 @@ button {
   top: 198px;
    left: 10px;
  }
+ */
 
 
 @font-face { 
