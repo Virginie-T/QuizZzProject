@@ -40,7 +40,9 @@ body {
   color: white;
   /*text-shadow*/
   margin-top: -120px; /*-195px;*/
-  font-size: 30px;
+  font-size: 35px;
+  font-family: "Starlight";
+
 
 }   
 
@@ -50,6 +52,7 @@ body {
   color: #D52B2B;
   font-size: 21px;
   margin-top: -8px; /*8px;*/
+  font-family: "Another X Display tfb";
 
    
 } 
@@ -58,7 +61,7 @@ body {
 
 #play-again {
       font-family: "FantasticParty";
-      font-size: 30px;
+      font-size: 20px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -67,28 +70,62 @@ body {
       border-radius: 10px;
       background-color: rgb(25, 96, 189);
       color: #F7FF9C;
-      padding: 0 63px 0 63px;
+      padding: 3px 63px 4px 63px;
       text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
       outline : none;
+      font-family: "chinrg__";
 
 }
 
 #next {
       font-family: "FantasticParty";
-      font-size: 30px;
+      font-size: 40px;
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
-      border: 1px solid white;
+      border: 3px solid #A6A9FC;
       border-radius: 10px;
       background-color: rgb(25, 96, 189);
       color: #F7FF9C;
-      padding: 0 70px 0 70px;
+      padding: 0px 70px 3.5px 70px;
       text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
       outline : none;
+    font-family: "MTF Toast-guess";
+
+
 }
 
 
+@font-face {
+  font-family: "KGHAPPY";
+  src: url("../font/KGHAPPY.ttf");
+}
+
+@font-face {
+  font-family: "KGHAPPYShadows";
+  src: url("../font/KGHAPPYShadows.ttf");
+}
+@font-face {
+  font-family: "KGHAPPYSolid";
+  src: url("../font/KGHAPPYSolid.ttf");
+}
+@font-face {
+  font-family: "MTF Toast-guess";
+  src: url("../font/MTF Toast-guess.ttf");
+}
+@font-face {
+  font-family: "chinrg__";
+  src: url("../font/chinrg__.ttf");
+}
+
+@font-face {
+  font-family: "Another X Display tfb";
+  src: url("../font/Another X Display tfb.ttf");
+}
+@font-face {
+  font-family: "Starlight";
+  src: url("../font/Starlight.ttf");
+}
 
 
