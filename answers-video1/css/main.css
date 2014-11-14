@@ -63,16 +63,7 @@ button {
           color: #F7FF9C;
 }
 
-#dots { 
-  border-image: url(image/dotted.png)30 repeat stretch;
-    border-image-width: 5px;
-    border-image-repeat: repeat;
-    position:absolute;
-      z-index: 1;
 
-
-
-}
 
 #first-answer {
   margin-top: 35px;
