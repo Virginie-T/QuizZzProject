@@ -6,6 +6,7 @@ background-repeat: repeat;
 body {
 	background-color: rgba(255, 192, 17, 0.5);  
     margin: 0;
+    min-height: 900px;
 	}
 
 
@@ -50,12 +51,16 @@ button {
       border: 5px dotted #F7FF9C;
       border-radius: 10px;
       background-color: #D52B2B;
-      color: #F7FF9C;
       padding: 0 70px 0 70px;
       text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
       outline : none
       /* not working box-shadow: 1px 1px 11px 5px #242424; */
 
+}
+
+ a {
+    text-decoration: none;
+          color: #F7FF9C;
 }
 
 #dots { 
