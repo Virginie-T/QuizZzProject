@@ -26,9 +26,9 @@ body {
     margin-top: -20px;
 
 }
-.anim {
+.anim-principal {
 
-	margin-left: auto;
+	  margin-left: auto;
     margin-right: auto;
     display: block;
     max-width: 400px;
@@ -36,33 +36,30 @@ body {
 }
 
 
- h1 {
-        font-family: "DottyShadow";
-        font-size: 38px; 
-        text-align: center;
-        border-bottom-style: solid; 
-        border-top-style: solid; 
-        border-radius: 15% 15% 15% 15%;
-        margin : 125px;  
-        margin-top: 55px;
-        padding-top: 3px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-
-        text-shadow: -1px 0px 24px rgba(255, 255, 255, 1);
-        color: #9E1E1E;  /*darkred  #B52525;  /*pink vif #4B3A4B;*/
-
-        background-color: #D889B3;  /*#D85299;*/
-        box-shadow: inset 0 0 17px 6px rgba(216,82,153,.5);
-        background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+.banner {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
 
 
- }
+h1 {
+  font-family: "DottyShadow";
+  font-size: 47px; 
+  margin-top: 55px;
+  z-index: 1;
+  position: absolute;
+  left: 127px;
+}
+
 
  h1 a {
     text-decoration: none;
-    color: #9E1E1E;  /*darkred  #B52525;  /*pink vif #4B3A4B;*/
+    color: #FDE233; /*#9E1E1E;  darkred  #B52525;  /*pink vif #4B3A4B;*/
+
 
  }
 
@@ -144,45 +141,27 @@ body {
 }
 
 
-#GUESS-BUTTON {
+
+.guess-anim {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-	display: block;
-        font-family: "chinrg__";
-  font-size: 20px;
-  border-radius: 10px 10px;
-  background-color: rgb(25, 96, 189);
-  text-shadow: 0 0 4px #000;
-  padding: 7px 16px 7px 16px;
-  margin-top: 10px;
-
-  border-radius: 10px;
-  color: #F7FF9C;
-  background-color: #002BFF;
-   /*box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 3px #9C0000; */
-  border: 1px solid #C7C7C7;
-  background: -webkit-linear-gradient(top, #A6A9FC, #002BFF);
-  outline : none;
-  padding-left: 35px;
-  padding-right: 35px;
-
- }
-
- a {
-  text-decoration: none; 
-  color: #F7FF9C;
-
+  width: 250px;
+  margin-top: 20px;
+  outline : none
 }
 
-.guess-sentence {
-	text-align: center;
-  font-family: "Typo_Comica_italic_demo";
-  font-size: 23px;
-  color: #D52B2B;
-  text-shadow: 0 0 1px #000;
-  margin-top: 25px;
-
+.container a p {
+  color: black;
+  text-align: center;
+font-size: 35px;
+  margin-top: -72px;
+  font-family: "chinrg__";
+  color: #FDE233;
+      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
+
+
 
 video {
 	margin: 10px; 
@@ -224,42 +203,15 @@ video {
 
 
 
-.frozen-pic {
-  max-width: 480px;
-  background-color: white;
-  display: block;
-  margin: 10px;
-  border: 1px solid #F2C7DE; /*#D889B3;*/
-  border-radius: 10px;
-
-}
-
-
-.shadow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  box-shadow: inset 0px 0px 50px -8px #F830FF;
-    top: 198px;
-    left: 10px;
-    max-width: 480px;
-    border-radius: 10px;
-    height: 241px;
-}
-
 button {
       font-family: "FantasticParty";
       font-size: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      
       margin-top: 18px;
       border: 5px dotted #F7FF9C;
       border-radius: 10px;
       background-color: #D52B2B;
       padding: 0 70px 0 70px;
-      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-      outline : none
       /* not working box-shadow: 1px 1px 11px 5px #242424; */
 
 }
@@ -269,54 +221,55 @@ button {
           color: #F7FF9C;
 }
 
+@mixin banner-color {
+    width: 93%;
+  height: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.banner-color {
+@include banner-color;
+} 
 
-
-#first-answer {
-  margin-top: 35px;
+.banner-color-bottom {
+@include banner-color;
+margin-top: 30px;
 }
 
-/* b ronde  bordure.png 
+#first-answer {
+  margin-top: 0px;
+}
 
-.bordure {
-  z-index: 1;
-  position: absolute;
-  width: 485px;
-  height: 250px;
-  top: 193px;
-   left: 10px;
- }
+#answers p {
 
- */
+font-family: "FantasticParty";
+color: #FDE233;
+font-size: 40px;
+margin-left: 150px;
+margin-top: -65px;
+position: absolute;
+z-index: 1;
+      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+      outline : none
+  }
 
-/* b square    border-clipart-Old_style_border_Vector_Clipart copy.png 
- .bordure {
-  z-index: 1;
-  position: absolute;
-  width: 480px;
-  height: 239px;
-  top: 198px;
-   left: 10px;
- }
- */
 
 .star {
-  max-width: 100px;
-  position: absolute;
-  z-index: 1;
-  margin-top: -281px;
+  max-width: 80px;
+  margin-top: -40px;
+  margin-bottom: -10px;
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .smallStar {
   max-width: 60px;
-  position: absolute;
-  z-index: 1;
-  margin-top: -50px;
-  margin-left: 424px;
-}
-
-
-button:active {
-  background-color: #34cda6;
+  margin-top: 0px;
+  margin-left: 280px;
 }
 
 @font-face { 
@@ -345,7 +298,7 @@ button:active {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;  
-  margin-top: 30px;
+  margin-top: -30px;
   display: block;
 }
 
@@ -372,46 +325,47 @@ button:active {
    
 } 
 
+.start-again { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-top: -25px;
+  outline : none
+}
 
-
-#play-again {
+.text-play-again {
       font-size: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 160px;
-      border: 1px solid white;
-      border-radius: 10px;
-      background-color: rgb(25, 96, 189);
-      padding: 3px 63px 4px 63px;
+      margin-top: -55px;
       text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-      outline : none;
       font-family: "chinrg__";
-
+text-align: center;
+color: #FDE233;
 }
 
-#next {
-      font-size: 40px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px;
-      border: 3px solid #A6A9FC;
-      border-radius: 10px;
-      background-color: rgb(25, 96, 189);
-      padding: 0px 70px 3.5px 70px;
+.more-fun { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  margin-top: 70px;
+  outline : none
+}
+
+.text-more-fun {
+  font-size: 55px;
+  text-align: center;
       text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-      outline : none;
     font-family: "MTF Toast-guess";
-
+      margin-top: -120px;
+      /*margin-left: -50px;*/
+color: #FDE233;
 
 }
 
- a {
-    text-decoration: none;
-      color: #F7FF9C;
-
- }
+#score-total {
+  margin-top: 90px;
+}
 
 @font-face {
   font-family: "MTF Toast-guess";
