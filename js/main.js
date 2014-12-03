@@ -7,3 +7,7 @@ $("video").on("ended",function(){
 $("#answers").click(function(){
   $("#answers:p").addClass("color");
 });
+
+
+var sound = new Audio();
+sound.src = "sound-effect/QuizZz-voice-Fernando.m4a";

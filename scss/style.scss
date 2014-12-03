@@ -14,9 +14,8 @@ body {
 	background-color: rgba(255, 192, 17, 0.5);  /*#FFDB86*/
     margin: 0;
     min-height: 900px;
-
-
 	}
+
 
 .logo {
     max-width: 370px;
@@ -27,12 +26,13 @@ body {
 
 }
 .anim-principal {
-
-	  margin-left: auto;
+margin-left: auto;
     margin-right: auto;
-    display: block;
+        display: block;
     max-width: 400px;
     margin-top: -5px;
+        clear: both;
+            text-align: center;
 }
 
 
@@ -41,7 +41,7 @@ body {
     margin-right: auto;
     display: block;
     width: 350px;
-    margin-top: 20px;
+    margin-top: -120px;
     margin-bottom: 20px;
 } 
 
@@ -51,8 +51,8 @@ h1 {
   font-size: 47px; 
   margin-top: 55px;
   z-index: 1;
-  position: absolute;
   left: 127px;
+text-align: center; 
 }
 
 
@@ -101,9 +101,8 @@ h1 {
     transform-style: preserve-3d;
 }
 .roll:hover span {
-    background: rgba(255,255,255,1);
 
-    transform: translate3d( 0px, 0px, -55px ) rotateX( 90deg );
+    transform: translate3d( 0px, 0px, -45px ) rotateX( 101deg );
 }
 .roll span:after {
     content: attr(data-title);
@@ -138,17 +137,25 @@ h1 {
 
 .container {
   width: 480px;
+   margin-left: auto;
+  margin-right: auto;
+        display: block;
 }
 
 
 
 .guess-anim {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
   width: 250px;
   margin-top: 20px;
-  outline : none
+}
+
+img.guess-anim {
+
+    margin-left: auto;
+  margin-right: auto;
+        display: block;
+
 }
 
 .container a p {
@@ -166,23 +173,24 @@ font-size: 35px;
 video {
 	margin: 10px; 
 	box-shadow: 0 0 10px #000;
-
+  
 }
 
 .rid-dr {
 	max-height: 300px;
 	z-index: 1;
-   position: absolute;
+  position: absolute;
    top: 198px;
    left: 422px;
-}
+      }
 
 .rid-gh {
-	max-height: 300px;
+  	max-height: 300px;
 	z-index: 1;
-   position: absolute;
+position: absolute;
    top: 198px;
    left: 10px;
+
 }
 
 @font-face { 
@@ -202,27 +210,13 @@ video {
 *******************************************************/
 
 
-
-button {
-      font-family: "FantasticParty";
-      font-size: 30px;
-      
-      margin-top: 18px;
-      border: 5px dotted #F7FF9C;
-      border-radius: 10px;
-      background-color: #D52B2B;
-      padding: 0 70px 0 70px;
-      /* not working box-shadow: 1px 1px 11px 5px #242424; */
-
-}
-
  a {
     text-decoration: none;
           color: #F7FF9C;
 }
 
 @mixin banner-color {
-    width: 93%;
+    width: 400px;
   height: 110px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -236,7 +230,7 @@ button {
 
 .banner-color-bottom {
 @include banner-color;
-margin-top: 30px;
+margin-top: 60px;
 }
 
 #first-answer {
@@ -248,14 +242,17 @@ margin-top: 30px;
 font-family: "FantasticParty";
 color: #FDE233;
 font-size: 40px;
-margin-left: 150px;
 margin-top: -65px;
-position: absolute;
 z-index: 1;
-      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-      outline : none
+text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+outline : none;
+text-align: center; 
+
   }
 
+p#im {
+  margin-top: -95px;
+}
 
 .star {
   max-width: 80px;
@@ -285,15 +282,6 @@ z-index: 1;
 
 
 
-/*
-.star {
-  max-width: 330px;
-  margin-left: auto;
-  margin-right: auto;  
-  margin-top: -30px;
-  display: block;
-} */
-
 .dot {
   max-width: 360px;
   margin-left: auto;
@@ -322,26 +310,8 @@ z-index: 1;
   margin-top: -8px; /*8px;*/
   font-family: "Another X Display tfb";
 
-   
 } 
 
-.start-again { 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  margin-top: -25px;
-  outline : none
-}
-
-.text-play-again {
-      font-size: 20px;
-      margin-top: -55px;
-      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-      font-family: "chinrg__";
-text-align: center;
-color: #FDE233;
-}
 
 .more-fun { 
   display: block;
@@ -364,7 +334,7 @@ color: #FDE233;
 }
 
 #score-total {
-  margin-top: 90px;
+  padding-top: 300px;
 }
 
 @font-face {

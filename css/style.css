@@ -14,7 +14,7 @@ body {
   min-height: 900px;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 .logo {
   max-width: 370px;
   margin-left: auto;
@@ -23,13 +23,15 @@ body {
   margin-top: -20px;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 28, ../scss/style.scss */
 .anim-principal {
   margin-left: auto;
   margin-right: auto;
   display: block;
   max-width: 400px;
   margin-top: -5px;
+  clear: both;
+  text-align: center;
 }
 
 /* line 39, ../scss/style.scss */
@@ -38,7 +40,7 @@ body {
   margin-right: auto;
   display: block;
   width: 350px;
-  margin-top: 20px;
+  margin-top: -120px;
   margin-bottom: 20px;
 }
 
@@ -48,8 +50,8 @@ h1 {
   font-size: 47px;
   margin-top: 55px;
   z-index: 1;
-  position: absolute;
   left: 127px;
+  text-align: center;
 }
 
 /* line 59, ../scss/style.scss */
@@ -95,11 +97,10 @@ h1 a {
 
 /* line 103, ../scss/style.scss */
 .roll:hover span {
-  background: white;
-  transform: translate3d(0px, 0px, -55px) rotateX(90deg);
+  transform: translate3d(0px, 0px, -45px) rotateX(101deg);
 }
 
-/* line 108, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 .roll span:after {
   content: attr(data-title);
   display: block;
@@ -118,22 +119,28 @@ h1 a {
 /*******************************************************
                       VIDEO PAGE
 *******************************************************/
-/* line 139, ../scss/style.scss */
+/* line 138, ../scss/style.scss */
 .container {
   width: 480px;
-}
-
-/* line 145, ../scss/style.scss */
-.guess-anim {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
-  margin-top: 20px;
-  outline: none;
+  display: block;
 }
 
-/* line 154, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
+.guess-anim {
+  width: 250px;
+  margin-top: 20px;
+}
+
+/* line 153, ../scss/style.scss */
+img.guess-anim {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 161, ../scss/style.scss */
 .container a p {
   color: black;
   text-align: center;
@@ -144,13 +151,13 @@ h1 a {
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 166, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 video {
   margin: 10px;
   box-shadow: 0 0 10px #000;
 }
 
-/* line 172, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .rid-dr {
   max-height: 300px;
   z-index: 1;
@@ -159,7 +166,7 @@ video {
   left: 422px;
 }
 
-/* line 180, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .rid-gh {
   max-height: 300px;
   z-index: 1;
@@ -181,27 +188,15 @@ video {
 /*******************************************************
                       ANSWER PAGE
 *******************************************************/
-/* line 206, ../scss/style.scss */
-button {
-  font-family: "FantasticParty";
-  font-size: 30px;
-  margin-top: 18px;
-  border: 5px dotted #F7FF9C;
-  border-radius: 10px;
-  background-color: #D52B2B;
-  padding: 0 70px 0 70px;
-  /* not working box-shadow: 1px 1px 11px 5px #242424; */
-}
-
-/* line 219, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #F7FF9C;
 }
 
-/* line 233, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 .banner-color {
-  width: 93%;
+  width: 400px;
   height: 110px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -210,37 +205,41 @@ a {
   display: block;
 }
 
-/* line 237, ../scss/style.scss */
+/* line 231, ../scss/style.scss */
 .banner-color-bottom {
-  width: 93%;
+  width: 400px;
   height: 110px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
-/* line 242, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
 #first-answer {
   margin-top: 0px;
 }
 
-/* line 246, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 #answers p {
   font-family: "FantasticParty";
   color: #FDE233;
   font-size: 40px;
-  margin-left: 150px;
   margin-top: -65px;
-  position: absolute;
   z-index: 1;
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   outline: none;
+  text-align: center;
 }
 
-/* line 260, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
+p#im {
+  margin-top: -95px;
+}
+
+/* line 257, ../scss/style.scss */
 .star {
   max-width: 80px;
   margin-top: -40px;
@@ -250,7 +249,7 @@ a {
   display: block;
 }
 
-/* line 269, ../scss/style.scss */
+/* line 266, ../scss/style.scss */
 .smallStar {
   max-width: 60px;
   margin-top: 0px;
@@ -265,15 +264,7 @@ a {
 /*******************************************************
                       RESULT PAGE
 *******************************************************/
-/*
-.star {
-  max-width: 330px;
-  margin-left: auto;
-  margin-right: auto;  
-  margin-top: -30px;
-  display: block;
-} */
-/* line 297, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .dot {
   max-width: 360px;
   margin-left: auto;
@@ -282,7 +273,7 @@ a {
   display: block;
 }
 
-/* line 306, ../scss/style.scss */
+/* line 294, ../scss/style.scss */
 .score {
   text-align: center;
   color: white;
@@ -293,7 +284,7 @@ a {
   font-family: "Starlight";
 }
 
-/* line 318, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .points {
   text-align: center;
   color: #D52B2B;
@@ -303,27 +294,7 @@ a {
   font-family: "Another X Display tfb";
 }
 
-/* line 328, ../scss/style.scss */
-.start-again {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  margin-top: -25px;
-  outline: none;
-}
-
-/* line 337, ../scss/style.scss */
-.text-play-again {
-  font-size: 20px;
-  margin-top: -55px;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-  font-family: "chinrg__";
-  text-align: center;
-  color: #FDE233;
-}
-
-/* line 346, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 .more-fun {
   display: block;
   margin-left: auto;
@@ -333,7 +304,7 @@ a {
   outline: none;
 }
 
-/* line 355, ../scss/style.scss */
+/* line 325, ../scss/style.scss */
 .text-more-fun {
   font-size: 55px;
   text-align: center;
@@ -344,9 +315,9 @@ a {
   color: #FDE233;
 }
 
-/* line 366, ../scss/style.scss */
+/* line 336, ../scss/style.scss */
 #score-total {
-  margin-top: 90px;
+  padding-top: 300px;
 }
 
 @font-face {
