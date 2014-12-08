@@ -9,5 +9,17 @@ $("#answers").click(function(){
 });
 
 
-var sound = new Audio();
-sound.src = "sound-effect/QuizZz-voice-Fernando.m4a";
+
+var sound = document.getElementsByTagName("audio")[0];
+
+sound.addEventListener(function() { document.getElementsByTagName("audio")[0].play()});
+
+
+$(".text-more-fun").click(function(event) {
+	 event.preventDefault();
+	$(this).addClass('rotate-text');
+	window.setTimeout("src='Video2.html'",500);
+
+});
+
+

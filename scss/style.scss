@@ -5,16 +5,17 @@
 html {
 
  background-image: url("../image/presence.gif");
-
-
+ width: 100%;
+ height: 100%;
 }
 
 
 body {
 	background-color: rgba(255, 192, 17, 0.5);  /*#FFDB86*/
-    margin: 0;
-    min-height: 900px;
-	}
+  margin: 0;
+  height: 90%;
+
+  	}
 
 
 .logo {
@@ -25,26 +26,24 @@ body {
     margin-top: -20px;
 
 }
+
 .anim-principal {
-margin-left: auto;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
-        display: block;
     max-width: 400px;
     margin-top: -5px;
-        clear: both;
-            text-align: center;
 }
 
 
-.banner {
+.banner {    
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     width: 350px;
-    margin-top: -120px;
+    margin-top: -130px;
     margin-bottom: 20px;
 } 
-
 
 h1 {
   font-family: "DottyShadow";
@@ -52,15 +51,13 @@ h1 {
   margin-top: 55px;
   z-index: 1;
   left: 127px;
-text-align: center; 
+  text-align: center; 
 }
 
 
- h1 a {
+h1 a {
     text-decoration: none;
     color: #FDE233; /*#9E1E1E;  darkred  #B52525;  /*pink vif #4B3A4B;*/
-
-
  }
 
 @font-face { 
@@ -79,15 +76,15 @@ text-align: center;
     display: inline-block;
     overflow: hidden;
     vertical-align: top;
-
-            perspective: 300px;
-
-            perspective-origin: 50% 50%;
+    perspective: 300px;
+    perspective-origin: 50% 50%;
 }
+
 .roll:hover {
     background: none;
     text-shadow: none;
 }
+
 .roll span {
     display: block;
     position: relative;
@@ -95,15 +92,15 @@ text-align: center;
     pointer-events: none;
 
     transition: all 400ms ease;
-            
     transform-origin: 50% 0%;
-    
     transform-style: preserve-3d;
 }
+
 .roll:hover span {
 
     transform: translate3d( 0px, 0px, -45px ) rotateX( 101deg );
 }
+
 .roll span:after {
     content: attr(data-title);
 
@@ -116,15 +113,9 @@ text-align: center;
 
     color: white; /*#F7FF9C;*/
     background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
-
-
     transform-origin: 50% 0%;
-
     transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 }
-
-
-
 
 
 
@@ -134,13 +125,6 @@ text-align: center;
 *******************************************************/
 
 
-
-.container {
-  width: 480px;
-   margin-left: auto;
-  margin-right: auto;
-        display: block;
-}
 
 
 
@@ -152,46 +136,44 @@ text-align: center;
 
 img.guess-anim {
 
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
-        display: block;
-
+  display: block;
 }
 
 .container a p {
   color: black;
   text-align: center;
-font-size: 35px;
+  font-size: 35px;
   margin-top: -72px;
   font-family: "chinrg__";
   color: #FDE233;
-      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 
-
-video {
-	margin: 10px; 
-	box-shadow: 0 0 10px #000;
-  
+.content {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.rid-dr {
-	max-height: 300px;
-	z-index: 1;
+.content video {
+  width: 100%;
+}
+
+.content:before {
+  content: '';
   position: absolute;
-   top: 198px;
-   left: 422px;
-      }
-
-.rid-gh {
-  	max-height: 300px;
-	z-index: 1;
-position: absolute;
-   top: 198px;
-   left: 10px;
-
+  width: 100%;
+  height: 100%;
+  padding-right: 0px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/curtains.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
 
 @font-face { 
     font-family: "Typo_Comica_italic_demo";
@@ -212,11 +194,11 @@ position: absolute;
 
  a {
     text-decoration: none;
-          color: #F7FF9C;
+    color: #F7FF9C;
 }
 
 @mixin banner-color {
-    width: 400px;
+  width: 400px;
   height: 110px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -224,6 +206,7 @@ position: absolute;
   margin-right: auto;
   display: block;
 }
+
 .banner-color {
 @include banner-color;
 } 
@@ -247,8 +230,12 @@ z-index: 1;
 text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 outline : none;
 text-align: center; 
-
-  }
+transition: all 1s ease;
+}
+ 
+#answers p:hover {
+  font-size: 50px;
+}
 
 p#im {
   margin-top: -95px;
@@ -258,7 +245,7 @@ p#im {
   max-width: 80px;
   margin-top: -40px;
   margin-bottom: -10px;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   display: block;
 }
@@ -275,9 +262,25 @@ p#im {
 }
 
 
+////////////////////media query////////////////////////
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+.banner-color {
+  width: 80%;
+}
+
+#answers p {
+  font-size: 10px;
+}
+
+} 
 
 /*******************************************************
-                      RESULT PAGE
+                     RESULT PAGE
 *******************************************************/
 
 
@@ -290,7 +293,6 @@ p#im {
   display: block;
 }
 
-
 .score {
   text-align: center;
   color: white;
@@ -298,9 +300,8 @@ p#im {
   margin-top: -120px; /*-195px;*/
   font-size: 35px;
   font-family: "Starlight";
-
-
-}   
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -3px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+}  
 
 
 .points {
@@ -309,33 +310,59 @@ p#im {
   font-size: 21px;
   margin-top: -8px; /*8px;*/
   font-family: "Another X Display tfb";
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 
 } 
-
 
 .more-fun { 
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 270px;
   margin-top: 70px;
   outline : none
 }
 
 .text-more-fun {
-  font-size: 55px;
-  text-align: center;
-      text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-    font-family: "MTF Toast-guess";
-      margin-top: -120px;
+font-size: 50px;
+text-align: center;
+text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+font-family: "MTF Toast-guess";
+margin-top: -147px;
       /*margin-left: -50px;*/
 color: #FDE233;
+transform: rotate(-11deg);
+padding: 5px 10px 0 -700px;
 
 }
 
 #score-total {
-  padding-top: 300px;
+  padding-top: 25px;
 }
+
+.right-pic {
+  margin: 50px 100px 0 160px;
+  max-height: 200px;
+}
+
+.wrong-pic {
+  margin: 50px 150px 0 40px;
+  max-height: 200px;
+
+}
+
+.big {
+  font-size: 95px;
+}
+
+.medium {
+  font-size: 72px;
+}
+
+.rotate-text {
+transform: rotate(4deg);
+}
+
 
 @font-face {
   font-family: "MTF Toast-guess";
@@ -354,5 +381,4 @@ color: #FDE233;
   font-family: "Starlight";
   src: url("../font/Starlight.ttf");
 }
-
 

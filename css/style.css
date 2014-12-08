@@ -4,6 +4,8 @@
 /* line 5, ../scss/style.scss */
 html {
   background-image: url("../image/presence.gif");
+  width: 100%;
+  height: 100%;
 }
 
 /* line 13, ../scss/style.scss */
@@ -11,10 +13,10 @@ body {
   background-color: rgba(255, 192, 17, 0.5);
   /*#FFDB86*/
   margin: 0;
-  min-height: 900px;
+  height: 90%;
 }
 
-/* line 20, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 .logo {
   max-width: 370px;
   margin-left: auto;
@@ -23,28 +25,26 @@ body {
   margin-top: -20px;
 }
 
-/* line 28, ../scss/style.scss */
+/* line 30, ../scss/style.scss */
 .anim-principal {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   max-width: 400px;
   margin-top: -5px;
-  clear: both;
-  text-align: center;
 }
 
 /* line 39, ../scss/style.scss */
 .banner {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   width: 350px;
-  margin-top: -120px;
+  margin-top: -130px;
   margin-bottom: 20px;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 h1 {
   font-family: "DottyShadow";
   font-size: 47px;
@@ -54,7 +54,7 @@ h1 {
   text-align: center;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 h1 a {
   text-decoration: none;
   color: #FDE233;
@@ -69,7 +69,7 @@ h1 a {
 /****************
   ROLLING LINKS
 *****************/
-/* line 78, ../scss/style.scss */
+/* line 75, ../scss/style.scss */
 .roll {
   display: inline-block;
   overflow: hidden;
@@ -78,13 +78,13 @@ h1 a {
   perspective-origin: 50% 50%;
 }
 
-/* line 87, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .roll:hover {
   background: none;
   text-shadow: none;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .roll span {
   display: block;
   position: relative;
@@ -95,12 +95,12 @@ h1 a {
   transform-style: preserve-3d;
 }
 
-/* line 103, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .roll:hover span {
   transform: translate3d(0px, 0px, -45px) rotateX(101deg);
 }
 
-/* line 107, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .roll span:after {
   content: attr(data-title);
   display: block;
@@ -119,28 +119,20 @@ h1 a {
 /*******************************************************
                       VIDEO PAGE
 *******************************************************/
-/* line 138, ../scss/style.scss */
-.container {
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/* line 147, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 .guess-anim {
   width: 250px;
   margin-top: 20px;
 }
 
-/* line 153, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 img.guess-anim {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-/* line 161, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .container a p {
   color: black;
   text-align: center;
@@ -151,28 +143,29 @@ img.guess-anim {
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 173, ../scss/style.scss */
-video {
-  margin: 10px;
-  box-shadow: 0 0 10px #000;
+/* line 155, ../scss/style.scss */
+.content {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 179, ../scss/style.scss */
-.rid-dr {
-  max-height: 300px;
-  z-index: 1;
-  position: absolute;
-  top: 198px;
-  left: 422px;
+/* line 162, ../scss/style.scss */
+.content video {
+  width: 100%;
 }
 
-/* line 187, ../scss/style.scss */
-.rid-gh {
-  max-height: 300px;
-  z-index: 1;
+/* line 166, ../scss/style.scss */
+.content:before {
+  content: '';
   position: absolute;
-  top: 198px;
-  left: 10px;
+  width: 100%;
+  height: 100%;
+  padding-right: 0px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/curtains.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 @font-face {
@@ -188,13 +181,13 @@ video {
 /*******************************************************
                       ANSWER PAGE
 *******************************************************/
-/* line 213, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #F7FF9C;
 }
 
-/* line 227, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
 .banner-color {
   width: 400px;
   height: 110px;
@@ -205,7 +198,7 @@ a {
   display: block;
 }
 
-/* line 231, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 .banner-color-bottom {
   width: 400px;
   height: 110px;
@@ -217,12 +210,12 @@ a {
   margin-top: 60px;
 }
 
-/* line 236, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 #first-answer {
   margin-top: 0px;
 }
 
-/* line 240, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 #answers p {
   font-family: "FantasticParty";
   color: #FDE233;
@@ -232,14 +225,20 @@ a {
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   outline: none;
   text-align: center;
+  transition: all 1s ease;
 }
 
-/* line 253, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
+#answers p:hover {
+  font-size: 50px;
+}
+
+/* line 240, ../scss/style.scss */
 p#im {
   margin-top: -95px;
 }
 
-/* line 257, ../scss/style.scss */
+/* line 244, ../scss/style.scss */
 .star {
   max-width: 80px;
   margin-top: -40px;
@@ -249,7 +248,7 @@ p#im {
   display: block;
 }
 
-/* line 266, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 .smallStar {
   max-width: 60px;
   margin-top: 0px;
@@ -261,10 +260,21 @@ p#im {
   src: url("../font/FantasticParty.ttf");
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 272, ../scss/style.scss */
+  .banner-color {
+    width: 80%;
+  }
+
+  /* line 276, ../scss/style.scss */
+  #answers p {
+    font-size: 10px;
+  }
+}
 /*******************************************************
-                      RESULT PAGE
+                     RESULT PAGE
 *******************************************************/
-/* line 285, ../scss/style.scss */
+/* line 288, ../scss/style.scss */
 .dot {
   max-width: 360px;
   margin-left: auto;
@@ -273,7 +283,7 @@ p#im {
   display: block;
 }
 
-/* line 294, ../scss/style.scss */
+/* line 296, ../scss/style.scss */
 .score {
   text-align: center;
   color: white;
@@ -282,9 +292,10 @@ p#im {
   /*-195px;*/
   font-size: 35px;
   font-family: "Starlight";
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -3px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 306, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 .points {
   text-align: center;
   color: #D52B2B;
@@ -292,32 +303,62 @@ p#im {
   margin-top: -8px;
   /*8px;*/
   font-family: "Another X Display tfb";
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 316, ../scss/style.scss */
+/* line 317, ../scss/style.scss */
 .more-fun {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 270px;
   margin-top: 70px;
   outline: none;
 }
 
-/* line 325, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 .text-more-fun {
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   font-family: "MTF Toast-guess";
-  margin-top: -120px;
+  margin-top: -147px;
   /*margin-left: -50px;*/
   color: #FDE233;
+  transform: rotate(-11deg);
+  padding: 5px 10px 0 -700px;
 }
 
-/* line 336, ../scss/style.scss */
+/* line 339, ../scss/style.scss */
 #score-total {
-  padding-top: 300px;
+  padding-top: 25px;
+}
+
+/* line 343, ../scss/style.scss */
+.right-pic {
+  margin: 50px 100px 0 160px;
+  max-height: 200px;
+}
+
+/* line 348, ../scss/style.scss */
+.wrong-pic {
+  margin: 50px 150px 0 40px;
+  max-height: 200px;
+}
+
+/* line 354, ../scss/style.scss */
+.big {
+  font-size: 95px;
+}
+
+/* line 358, ../scss/style.scss */
+.medium {
+  font-size: 72px;
+}
+
+/* line 362, ../scss/style.scss */
+.rotate-text {
+  transform: rotate(4deg);
 }
 
 @font-face {
