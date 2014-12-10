@@ -10,7 +10,7 @@ html {
 
 /* line 13, ../scss/style.scss */
 body {
-  background-color: rgba(255, 192, 17, 0);
+  background-color: rgba(255, 192, 17, 0.5);
   /*#FFDB86*/
   margin: 0;
   height: 100%;
@@ -112,7 +112,7 @@ h1 a {
   white-space: nowrap;
   color: white;
   /*#F7FF9C;*/
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
   transform-origin: 50% 0%;
   transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
 }
@@ -140,7 +140,7 @@ img.guess-anim {
   margin-top: -10vh;
   font-family: "chinrg__";
   color: #FDE233;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0), -1px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -2px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* line 151, ../scss/style.scss */
@@ -237,7 +237,7 @@ a {
   color: #FDE233;
   font-size: 6em;
   z-index: 1;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0), -1px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -2px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   outline: none;
   text-align: center;
   transition: all 1s ease;
@@ -250,7 +250,7 @@ a {
   color: #FDE233;
   font-size: 6em;
   z-index: 1;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0), -1px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -2px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   outline: none;
   text-align: center;
   transition: all 1s ease;
@@ -263,7 +263,7 @@ a {
   color: #FDE233;
   font-size: 6em;
   z-index: 1;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0), -1px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -2px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   outline: none;
   text-align: center;
   transition: all 1s ease;
@@ -288,7 +288,7 @@ a {
 /*******************************************************
                      RESULT PAGE
 *******************************************************/
-/* line 295, ../scss/style.scss */
+/* line 289, ../scss/style.scss */
 .dot {
   width: 85vw;
   margin-left: auto;
@@ -297,7 +297,7 @@ a {
   display: block;
 }
 
-/* line 303, ../scss/style.scss */
+/* line 297, ../scss/style.scss */
 .score {
   text-align: center;
   color: white;
@@ -306,10 +306,10 @@ a {
   /*-195px;*/
   font-size: 1.8em;
   font-family: "Starlight";
-  text-shadow: 1px 0 0 rgba(0, 0, 0, 0), -3px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -2px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -3px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 314, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .points {
   text-align: center;
   color: #D52B2B;
@@ -317,10 +317,10 @@ a {
   margin-top: -3vh;
   /*8px;*/
   font-family: "Another X Display tfb";
-  text-shadow: 1px 0 0 rgba(0, 0, 0, 0), -1px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -1px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 324, ../scss/style.scss */
+/* line 318, ../scss/style.scss */
 .more-fun {
   display: block;
   margin-left: auto;
@@ -330,11 +330,11 @@ a {
   outline: none;
 }
 
-/* line 333, ../scss/style.scss */
+/* line 327, ../scss/style.scss */
 .text-more-fun {
   font-size: 2.8em;
   text-align: center;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0), -1px 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 0), 0 -2px 0 rgba(0, 0, 0, 0), 1px 1px rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0), 1px -1px 0 rgba(0, 0, 0, 0), -1px 1px 0 rgba(0, 0, 0, 0);
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
   font-family: "MTF Toast-guess";
   margin-top: -22vh;
   /*margin-left: -50px;*/
@@ -343,34 +343,34 @@ a {
   padding: 5px 10px 0 -700px;
 }
 
-/* line 346, ../scss/style.scss */
+/* line 340, ../scss/style.scss */
 #score-total {
   padding-top: 1.6vh;
 }
 
-/* line 350, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 .right-pic {
   margin: 5vh 10vw 0 32vw;
   max-height: 30vh;
 }
 
-/* line 355, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 .wrong-pic {
   margin: 5vh 10vw 0 9vw;
   max-height: 30vh;
 }
 
-/* line 360, ../scss/style.scss */
+/* line 354, ../scss/style.scss */
 .big {
   font-size: 1.7em;
 }
 
-/* line 364, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 .medium {
   font-size: 1.3em;
 }
 
-/* line 368, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 .rotate-text {
   transform: rotate(4deg);
 }
@@ -393,4 +393,14 @@ a {
 @font-face {
   font-family: "Starlight";
   src: url("../font/Starlight.ttf");
+}
+
+/*/////////////////COMPTOR///////*/
+/* line 388, ../scss/style.scss */
+img.compteur {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  padding-top: 5vh;
 }

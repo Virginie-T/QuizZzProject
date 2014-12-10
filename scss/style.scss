@@ -277,12 +277,6 @@ margin-top: -13vh;
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
-.banner-color {
-}
-
-#answers p {
- 
-}
 
 } 
 
@@ -386,5 +380,17 @@ transform: rotate(4deg);
 @font-face {
   font-family: "Starlight";
   src: url("../font/Starlight.ttf");
+}
+
+
+/*/////////////////COMPTOR///////*/
+
+img.compteur {
+  display: block;
+    margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  padding-top: 5vh;
+
 }
 

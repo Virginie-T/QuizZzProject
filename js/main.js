@@ -107,15 +107,15 @@ $(document).ready(function(){
 
 /*/////////////WRONG_RESULT PAGE //////*/
 
-  $('#more-fun').on('click', function(event){
-        event.preventDefault(); 
-        
+  $('#more-fun').on('click', function(event){        
 
         $('<audio></audio>')
             .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
             .attr('autoplay', 'autoplay');  
         
-        window.location.href = $(this).attr('href');  
+        window.location = $(this).parent().attr('href');  
+                event.preventDefault(); 
+
     });
 
 
@@ -124,6 +124,9 @@ $(document).ready(function(){
     $(".text-more-fun").click(function(event) {
 	    event.preventDefault();
 	   $(this).addClass('rotate-text');
+
+               window.location.href = $(this).attr('href');  
+
     });
 
 });
