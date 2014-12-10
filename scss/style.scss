@@ -65,6 +65,10 @@ h1 a {
     src: url('../font/DottyShadow.ttf');
 }
 
+@font-face { 
+    font-family: "BigSquareDots";
+    src: url('../font/BigSquareDots.ttf');
+}
 
 
 /****************
@@ -139,10 +143,10 @@ img.guess-anim {
 
 .container a p {
   text-align: center;
-  font-size: 1.8em;
-  margin-top: -10vh;
-  font-family: "chinrg__";
-  color: #FDE233;
+  font-size: 2.1em;
+  margin-top: -9vh;
+  font-family: "BigSquareDots"; /*MTF Toast-guess";*/
+  color: #FFF000;
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 
 }
@@ -207,23 +211,28 @@ img.guess-anim {
   display: block;
 }
 
+#answer2 {
+  margin-top: 5vh;
+  margin-bottom: 9vh;
+}
+
 .banner-color-top {
 @include banner-color;
-  margin-top: 0px;
-  margin-bottom: 10.5vh;
+  /*margin-top: 0px;
+  margin-bottom: 10.5vh;*/
 } 
 .banner-color-middle {
-@include banner-color;
-margin-bottom: 9vh;
+@include banner-color;/*
+margin-bottom: 19vh;*/
 } 
 .banner-color-bottom {
-@include banner-color;
-margin-top: 10vh;
+@include banner-color;/*
+margin-top: 10vh;*/
 }
 
 @mixin answer-p {
 
-font-family: "FantasticParty";
+font-family: "Arista";
 color: #FDE233;
 font-size: 6em;
 
@@ -234,23 +243,20 @@ text-align: center;
 transition: all 1s ease;
 }
  
-#answers p:hover {
-  font-size: 500px;
-}
 
 #first-answer {
 @include answer-p;
-margin-top: -9vh;
+margin-top: -7.5vh;
 }
 
 #second-answer {
 @include answer-p;
-margin-top: -13vh;
+margin-top: -7.5vh;
 }
 
 #third-answer {
 @include answer-p;
-  margin-top: -13vh;
+  margin-top: -10.5vh;
 }
 
 
@@ -265,8 +271,8 @@ margin-top: -13vh;
 
 
 @font-face { 
-    font-family: "FantasticParty";
-    src: url('../font/FantasticParty.ttf');
+    font-family: "Arista";
+    src: url('../font/Arista.ttf');
 }
 
 
@@ -299,9 +305,10 @@ and (max-device-width : 480px) {
   color: white;
   /*text-shadow*/
   margin-top: -16vh; /*-195px;*/
-  font-size: 1.8em;
-  font-family: "Starlight";
+  font-size: 1.1em;
+  font-family: "Another X Display tfb";
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -3px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.6vh;
 }  
 
 
@@ -309,7 +316,7 @@ and (max-device-width : 480px) {
   text-align: center;
   color: #D52B2B;
   font-size: 1.5em;
-  margin-top: -3vh; /*8px;*/
+  margin-top: -2.5vh; /*8px;*/
   font-family: "Another X Display tfb";
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 
@@ -319,21 +326,23 @@ and (max-device-width : 480px) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
+  height: 25%;
   margin-top: 30%;
   outline : none;
 }
 
 .text-more-fun {
-font-size: 2.8em;
+font-size: 2.3em; /*2.8em;*/
 text-align: center;
 text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-font-family: "MTF Toast-guess";
-margin-top: -22vh;
+font-family: "BigSquareDots"; /*MTF Toast-guess";*/
+margin-top: -14.5vh;
       /*margin-left: -50px;*/
-color: #FDE233;
-transform: rotate(-11deg);
+color: #FFF500; /*#FDE233;*/
+transform: rotate(-6deg);
 padding: 5px 10px 0 -700px;
+
 
 }
 
@@ -351,14 +360,6 @@ padding: 5px 10px 0 -700px;
   max-height: 30vh;
 }
 
-.big {
-  font-size: 1.7em;
-}
-
-.medium {
-  font-size: 1.3em;
-}
-
 .rotate-text {
 transform: rotate(4deg);
 }
@@ -368,29 +369,29 @@ transform: rotate(4deg);
   font-family: "MTF Toast-guess";
   src: url("../font/MTF Toast-guess.ttf");
 }
-@font-face {
-  font-family: "chinrg__";
-  src: url("../font/chinrg__.ttf");
-}
 
 @font-face {
   font-family: "Another X Display tfb";
   src: url("../font/Another X Display tfb.ttf");
 }
-@font-face {
-  font-family: "Starlight";
-  src: url("../font/Starlight.ttf");
-}
 
 
-/*/////////////////COMPTOR///////*/
+/*/////////////////COUNTER///////*/
 
 img.compteur {
   display: block;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   height: 500px;
   padding-top: 5vh;
 
 }
 
+svg {
+  background-color: transparent; /*because it'll be apply on top of the photoshop-counter*/
+  z-index: 1;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,12 +1,3 @@
-$('button').button({ disabled: true });
-
-$("video").on("ended",function(){
-  $( "button" ).button( "option", "disabled", false );
-});
-
-$("#answers").click(function(){
-  $("#answers:p").addClass("color");
-});
 
 
 
@@ -20,113 +11,45 @@ $("#answers").click(function(){
 /*logo*/
 
 $(document).ready(function(){
+  console.log("document ready");
     
-    $('.logo').on('click', function(event){
-        event.preventDefault(); 
-        
-
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location.href = $(this).attr('href');  
-    });
     
-
-/* anim principale */
-
-    
-    $('.anim-principal').on('click', function(event){
-        event.preventDefault(); 
-        
-
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location.href = $(this).attr('href');  
-    });
-    
-/* Play  button */
-
-    
-    $('.banner').on('click', function(event){
-        event.preventDefault(); 
-        
-
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location.href = $(this).attr('href');  
-    });
-    
-/*///////////////////VIDEO PAGE/////////*/
-
-/*guess button*/
-
-    
-    $('.guess-anim').on('click', function(event){
-        event.preventDefault(); 
-        
-
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location.href = $(this).attr('href');  
-    });
-
-/*/////////ANSWERS PAGE //////////*/   
-
-/*banner*/
-
-    $('.wrong').on('click', function(event){
-        event.preventDefault(); 
-        
-
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location.href = $(this).attr('href');  
-    });
-
-
-
-  $('.right').on('click', function(event){
-        event.preventDefault(); 
-        
-
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location.href = $(this).attr('href');  
-    });
-
 /*/////////////WRONG_RESULT PAGE //////*/
 
-  $('#more-fun').on('click', function(event){        
 
-        $('<audio></audio>')
-            .attr('src', 'http://www.freesfx.co.uk/rx2/mp3s/10/12016_1415549742.mp3')
-            .attr('autoplay', 'autoplay');  
-        
-        window.location = $(this).parent().attr('href');  
-                event.preventDefault(); 
+$('.sound-link').click(function(){
+  event.preventDefault();  
+  var $soundFile = $(this).attr('data-sound');
+  var $link = $(this).attr('href');
 
-    });
+  var audioTag = "<audio class='playing-audio' data-next-page='" +$link + "'></audio>";
+  $('.sound-link')
+    .append($(audioTag)
+            .attr('src', $soundFile).attr('autoplay', 'autoplay'));  
+  
+  // $(".playing-audio").on("ended", function(){
+  //     var $link = $(this).attr('data-next-page');
+  //     window.location = $link;
+  // });
+      
+});
+
 
 
 /************************************ANIMATION*******************************/
 
     $(".text-more-fun").click(function(event) {
-	    event.preventDefault();
 	   $(this).addClass('rotate-text');
 
-               window.location.href = $(this).attr('href');  
+              window.location.href = $(this).attr('href');  
+       event.preventDefault();
 
     });
 
 });
+
+
+
+
+/************************************SVG ARROW*******************************/
+

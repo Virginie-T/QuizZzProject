@@ -67,10 +67,15 @@ h1 a {
   src: url("../font/DottyShadow.ttf");
 }
 
+@font-face {
+  font-family: "BigSquareDots";
+  src: url("../font/BigSquareDots.ttf");
+}
+
 /****************
   ROLLING LINKS
 *****************/
-/* line 75, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .roll {
   display: inline-block;
   overflow: hidden;
@@ -79,13 +84,13 @@ h1 a {
   perspective-origin: 50% 50%;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .roll:hover {
   background: none;
   text-shadow: none;
 }
 
-/* line 88, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .roll span {
   display: block;
   position: relative;
@@ -96,12 +101,12 @@ h1 a {
   transform-style: preserve-3d;
 }
 
-/* line 99, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .roll:hover span {
   transform: translate3d(0px, 0px, -45px) rotateX(101deg);
 }
 
-/* line 104, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .roll span:after {
   content: attr(data-title);
   display: block;
@@ -120,30 +125,31 @@ h1 a {
 /*******************************************************
                       VIDEO PAGE
 *******************************************************/
-/* line 127, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 .guess-anim {
   width: 60%;
   margin-top: 12vh;
 }
 
-/* line 133, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 img.guess-anim {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-/* line 140, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .container a p {
   text-align: center;
-  font-size: 1.8em;
-  margin-top: -10vh;
-  font-family: "chinrg__";
-  color: #FDE233;
+  font-size: 2.1em;
+  margin-top: -9vh;
+  font-family: "BigSquareDots";
+  /*MTF Toast-guess";*/
+  color: #FFF000;
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 151, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .content {
   position: relative;
   width: 95%;
@@ -151,13 +157,13 @@ img.guess-anim {
   margin-right: auto;
 }
 
-/* line 158, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .content video {
   width: 100%;
   margin-top: 5vh;
 }
 
-/* line 164, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 .content:before {
   content: '';
   position: absolute;
@@ -183,13 +189,19 @@ img.guess-anim {
 /*******************************************************
                       ANSWER PAGE
 *******************************************************/
-/* line 194, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #F7FF9C;
 }
 
-/* line 210, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
+#answer2 {
+  margin-top: 5vh;
+  margin-bottom: 9vh;
+}
+
+/* line 219, ../scss/style.scss */
 .banner-color-top {
   width: 100%;
   height: 100%;
@@ -198,11 +210,11 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 0px;
-  margin-bottom: 10.5vh;
+  /*margin-top: 0px;
+  margin-bottom: 10.5vh;*/
 }
 
-/* line 215, ../scss/style.scss */
+/* line 224, ../scss/style.scss */
 .banner-color-middle {
   width: 100%;
   height: 100%;
@@ -211,10 +223,11 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-bottom: 9vh;
+                      /*
+margin-bottom: 19vh;*/
 }
 
-/* line 219, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .banner-color-bottom {
   width: 100%;
   height: 100%;
@@ -223,17 +236,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 10vh;
+                      /*
+margin-top: 10vh;*/
 }
 
-/* line 237, ../scss/style.scss */
-#answers p:hover {
-  font-size: 500px;
-}
-
-/* line 241, ../scss/style.scss */
+/* line 247, ../scss/style.scss */
 #first-answer {
-  font-family: "FantasticParty";
+  font-family: "Arista";
   color: #FDE233;
   font-size: 6em;
   z-index: 1;
@@ -241,12 +250,12 @@ a {
   outline: none;
   text-align: center;
   transition: all 1s ease;
-  margin-top: -9vh;
+  margin-top: -7.5vh;
 }
 
-/* line 246, ../scss/style.scss */
+/* line 252, ../scss/style.scss */
 #second-answer {
-  font-family: "FantasticParty";
+  font-family: "Arista";
   color: #FDE233;
   font-size: 6em;
   z-index: 1;
@@ -254,23 +263,23 @@ a {
   outline: none;
   text-align: center;
   transition: all 1s ease;
-  margin-top: -13vh;
-}
-
-/* line 251, ../scss/style.scss */
-#third-answer {
-  font-family: "FantasticParty";
-  color: #FDE233;
-  font-size: 6em;
-  z-index: 1;
-  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-  outline: none;
-  text-align: center;
-  transition: all 1s ease;
-  margin-top: -13vh;
+  margin-top: -7.5vh;
 }
 
 /* line 257, ../scss/style.scss */
+#third-answer {
+  font-family: "Arista";
+  color: #FDE233;
+  font-size: 6em;
+  z-index: 1;
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+  outline: none;
+  text-align: center;
+  transition: all 1s ease;
+  margin-top: -10.5vh;
+}
+
+/* line 263, ../scss/style.scss */
 .star {
   max-width: 20%;
   margin-top: -40px;
@@ -281,14 +290,14 @@ a {
 }
 
 @font-face {
-  font-family: "FantasticParty";
-  src: url("../font/FantasticParty.ttf");
+  font-family: "Arista";
+  src: url("../font/Arista.ttf");
 }
 
 /*******************************************************
                      RESULT PAGE
 *******************************************************/
-/* line 289, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .dot {
   width: 85vw;
   margin-left: auto;
@@ -297,80 +306,75 @@ a {
   display: block;
 }
 
-/* line 297, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 .score {
   text-align: center;
   color: white;
   /*text-shadow*/
   margin-top: -16vh;
   /*-195px;*/
-  font-size: 1.8em;
-  font-family: "Starlight";
+  font-size: 1.1em;
+  font-family: "Another X Display tfb";
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -3px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.6vh;
 }
 
-/* line 308, ../scss/style.scss */
+/* line 315, ../scss/style.scss */
 .points {
   text-align: center;
   color: #D52B2B;
   font-size: 1.5em;
-  margin-top: -3vh;
+  margin-top: -2.5vh;
   /*8px;*/
   font-family: "Another X Display tfb";
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 318, ../scss/style.scss */
+/* line 325, ../scss/style.scss */
 .more-fun {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
+  height: 25%;
   margin-top: 30%;
   outline: none;
 }
 
-/* line 327, ../scss/style.scss */
+/* line 335, ../scss/style.scss */
 .text-more-fun {
-  font-size: 2.8em;
+  font-size: 2.3em;
+  /*2.8em;*/
   text-align: center;
   text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
-  font-family: "MTF Toast-guess";
-  margin-top: -22vh;
+  font-family: "BigSquareDots";
+  /*MTF Toast-guess";*/
+  margin-top: -14.5vh;
   /*margin-left: -50px;*/
-  color: #FDE233;
-  transform: rotate(-11deg);
+  color: #FFF500;
+  /*#FDE233;*/
+  transform: rotate(-6deg);
   padding: 5px 10px 0 -700px;
 }
 
-/* line 340, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 #score-total {
   padding-top: 1.6vh;
 }
 
-/* line 344, ../scss/style.scss */
+/* line 353, ../scss/style.scss */
 .right-pic {
   margin: 5vh 10vw 0 32vw;
   max-height: 30vh;
 }
 
-/* line 349, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 .wrong-pic {
   margin: 5vh 10vw 0 9vw;
   max-height: 30vh;
 }
 
-/* line 354, ../scss/style.scss */
-.big {
-  font-size: 1.7em;
-}
-
-/* line 358, ../scss/style.scss */
-.medium {
-  font-size: 1.3em;
-}
-
-/* line 362, ../scss/style.scss */
+/* line 363, ../scss/style.scss */
 .rotate-text {
   transform: rotate(4deg);
 }
@@ -381,26 +385,27 @@ a {
 }
 
 @font-face {
-  font-family: "chinrg__";
-  src: url("../font/chinrg__.ttf");
-}
-
-@font-face {
   font-family: "Another X Display tfb";
   src: url("../font/Another X Display tfb.ttf");
 }
 
-@font-face {
-  font-family: "Starlight";
-  src: url("../font/Starlight.ttf");
-}
-
-/*/////////////////COMPTOR///////*/
-/* line 388, ../scss/style.scss */
+/*/////////////////COUNTER///////*/
+/* line 381, ../scss/style.scss */
 img.compteur {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 500px;
   padding-top: 5vh;
+}
+
+/* line 390, ../scss/style.scss */
+svg {
+  background-color: transparent;
+  /*because it'll be apply on top of the photoshop-counter*/
+  z-index: 1;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
