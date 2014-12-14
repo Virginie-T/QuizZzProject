@@ -389,7 +389,7 @@ margin-top: 10vh;*/
   src: url("../font/Another X Display tfb.ttf");
 }
 
-/*/////////////////COUNTER///////*/
+/*/////////////////COUNTER//////////////////*/
 /* line 381, ../scss/style.scss */
 img.compteur {
   display: block;
@@ -399,13 +399,18 @@ img.compteur {
   padding-top: 5vh;
 }
 
-/* line 390, ../scss/style.scss */
+/* line 389, ../scss/style.scss */
 svg {
   background-color: transparent;
   /*because it'll be apply on top of the photoshop-counter*/
   z-index: 1;
-  position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 38%;
+  margin-right: 0;
+  width: 23vw;
+}
+
+/* line 397, ../scss/style.scss */
+svg#counterBox {
+  margin-top: -82.5vh;
+  margin-bottom: 12vh;
 }

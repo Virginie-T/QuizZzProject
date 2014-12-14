@@ -376,7 +376,7 @@ transform: rotate(4deg);
 }
 
 
-/*/////////////////COUNTER///////*/
+/*/////////////////COUNTER//////////////////*/
 
 img.compteur {
   display: block;
@@ -384,14 +384,17 @@ img.compteur {
   margin-right: auto;
   height: 500px;
   padding-top: 5vh;
-
 }
 
 svg {
   background-color: transparent; /*because it'll be apply on top of the photoshop-counter*/
   z-index: 1;
-  position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 38%;
+  margin-right: 0;
+  width: 23vw;
+}
+
+svg#counterBox {
+  margin-top: -82.5vh;
+  margin-bottom: 12vh;
 }
